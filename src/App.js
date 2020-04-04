@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import fetchNinjas from './services/ninjaService';
+import LeetGrid from './meet/LeetGrid';
 
 function App() {
   const [ninjas, setNinjas] = useState([]);
@@ -14,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header"><h1>_fellowship_of_1337</h1></header>
-      {ninjas.map((ninja) => <li key={ninja.name}>{ninja.name}</li>)}
+      <LeetGrid ninjas={ninjas} />
     </div>
   );
 }
