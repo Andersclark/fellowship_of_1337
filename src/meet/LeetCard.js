@@ -2,8 +2,16 @@ import React from 'react';
 import './LeetCard.css';
 import PropTypes from 'prop-types';
 
-const LeetCard = ({ ninja }) => <div className="card"><h3>{ninja.name}</h3></div>;
+const LeetCard = ({ ninja }) => (
 
+  <div className="card item">
+    <img
+      alt={`Black and white portrait of ${ninja.name}`}
+      src={ninja.imagePortraitUrl}
+      className="ninjaPortrait"
+    />
+  </div>
+);
 LeetCard.propTypes = {
   ninja: PropTypes.shape({
     name: PropTypes.string,

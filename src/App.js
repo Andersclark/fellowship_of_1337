@@ -14,8 +14,12 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header"><h1>_fellowship_of_1337</h1></header>
-      <LeetGrid ninjas={ninjas} />
+      <div className="container">
+        <header className="App-header">
+          <h1>_fellowship_of_1337</h1>
+        </header>
+        <LeetGrid ninjas={ninjas} />
+      </div>
     </div>
   );
 }
