@@ -2,15 +2,24 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import fetchNinjas from './services/ninjaService';
 import LeetGrid from './meet/LeetGrid';
+import ControlSurface from './meet/ControlSurface';
 
 function App() {
   const [ninjas, setNinjas] = useState([]);
-
+  const [rawNinjas, setRawNinjas] = useState([]);
   useEffect(() => {
     fetchNinjas().then((data) => {
-      setNinjas(data);
+      setRawNinjas(data);
     });
   }, []);
+  useEffect(() => {
+    console.log('RAWNINJAS: ', rawNinjas);
+    setNinjas(rawNinjas);
+  }, [rawNinjas]);
+
+  useEffect(() => {
+    console.log('NINJAS: ', ninjas);
+  }, [ninjas]);
 
   return (
     <div className="App">
@@ -18,6 +27,7 @@ function App() {
         <header className="App-header">
           <h1>_fellowship_of_1337</h1>
         </header>
+        <ControlSurface ninjas={ninjas} setNinjas={setNinjas} rawNinjas={rawNinjas} />
         <LeetGrid ninjas={ninjas} />
       </div>
     </div>
