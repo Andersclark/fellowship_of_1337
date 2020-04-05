@@ -1,8 +1,7 @@
 
 body {
   margin: 0;
-  font-family: 'Montserrat', 'Segoe UI', 'Roboto',
-    'Ubuntu', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Montserrat', 'Roboto','Helvetica Neue', 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
