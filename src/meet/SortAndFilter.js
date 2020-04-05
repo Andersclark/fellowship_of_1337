@@ -12,7 +12,7 @@ function filterBy(rawNinjas, setNinjas, filterString) {
   if (filterString.length > 0) {
     const filtered = rawNinjas.filter((ninja) => ninja.name.toLowerCase()
       .includes(filterString.toLowerCase())
-        || ninja.mainText.toLowerCase().includes(filterString.toLowerCase()));
+        || (ninja.office && ninja.office.toLowerCase().includes(filterString.toLowerCase())));
     setNinjas(filtered);
   } else { setNinjas(rawNinjas); }
 }
