@@ -1,10 +1,33 @@
 # fellowship_of_1337
 
-Is a project written by Anders Clark in the mids of a raging pandemic in the hopes of finding a safe haven at his long-term dream employer tretton37.
+This is a project written by me, Anders Clark, in the midst of a raging pandemic in the hopes of finding a safe haven at his long-term dream employer tretton37.
+The task was to rebuild [tretton37.com/meet](https://tretton37.com/meet).
+
+##### My goal has been to:
+* Write fairly clean code, even though I'm pressed for time.
+* Set up a project that would be easy to clone, run and deploy.
+* Not have any dependencies on UI-frameworks.
+* Build an esthetically clean site.
+* Support Chrome, Firefox and Edge.
+* Make the entire product responsive and working on all screen sizes.
+* Implement some non-disturbing animations.
+* Add sorting and filtering to UI.
+ 
+
+## How to start
+
+##### Run this command in terminal:
+`git clone https://github.com/Andersclark/fellowship_of_1337.git && cd fellowship_of_1337 && yarn install && yarn start`
+
+(*requires [Yarn](https://yarnpkg.com/)*)
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn install`
+
+Installs all dependencies. Needed if you just cloned this repository.
 
 ### `yarn start`
 
