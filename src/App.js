@@ -13,13 +13,8 @@ function App() {
     });
   }, []);
   useEffect(() => {
-    console.log('RAWNINJAS: ', rawNinjas);
     setNinjas(rawNinjas);
   }, [rawNinjas]);
-
-  useEffect(() => {
-    console.log('NINJAS: ', ninjas);
-  }, [ninjas]);
 
   return (
     <div className="App">

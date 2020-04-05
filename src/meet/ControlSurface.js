@@ -8,9 +8,9 @@ import {
 const ControlSurface = ({ ninjas, setNinjas, rawNinjas }) => (
   <div>
     <input type="text" placeholder="search for name or office" onChange={(e) => filterBy(rawNinjas, setNinjas, e.target.value)} />
+    <button type="button" onClick={() => clearFilters(setNinjas, rawNinjas)}>&#9747;</button>
     <button type="button" onClick={() => sortByName(ninjas, setNinjas)}>Sort by Name</button>
     <button type="button" onClick={() => sortByOffice(ninjas, setNinjas)}>Sort by Office</button>
-    <button type="button" onClick={() => clearFilters(setNinjas, rawNinjas)}>Reset</button>
   </div>
 );
 export default ControlSurface;

@@ -1,0 +1,19 @@
+.ninjaProfile {
+    padding-top: 10%;
+    width: 100%;
+    margin: 5%;
+}
+.ninjaBody {
+    max-width: 100%;
+    object-fit: contain;
+}
+@media (max-width: 640px) {
+    .ninjaBody {
+        display: none;
+    }
+}
+
+.socialButtons {
+    margin-top: 25px;
+    margin-bottom: 150px;
+}
